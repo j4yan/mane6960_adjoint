@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+
+\bibitem{Shahbazi2005}
+Shahbazi, K., \enquote{An explicit expression for the penalty parameter of the
+  interior penalty method,} {\em Journal of Computational Physics\/}, Vol.~205,
+  No.~2, 2005, pp.~401 -- 407.
+
+\bibitem{Hartmann2007}
+Hartmann, R., \enquote{Adjoint Consistency Analysis of Discontinuous Galerkin
+  Discretizations,} {\em SIAM Journal on Numerical Analysis\/}, Vol.~45, No.~6,
+  2007, pp.~2671--2696.
+
+\bibitem{Hicken2011}
+Hicken, J.~E. and Zingg, D.~W., \enquote{Superconvergent Functional Estimates
+  from Summation-By-Parts Finite-Difference Discretizations,} {\em SIAM Journal
+  on Scientific Computing\/}, Vol.~33, No.~2, 2011, pp.~893--922.
+
+\end{thebibliography}

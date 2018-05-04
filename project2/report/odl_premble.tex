@@ -1,0 +1,101 @@
+% put the command
+%
+% \input{odl_preamble.tex}
+%
+% at the top of your latex file (just after the \documentclass) to include this
+% in your document.  Feel free to add to this file, but please consider adding
+% commands and packages that are specific to your work outside of this file:
+% let's reserve this file for stuff that most of us would need.
+
+% The amssymb package provides various useful mathematical symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx} % for includegraphics
+\usepackage{xspace} % needed for \eg, \ie, \etc
+\usepackage{bm} % for bold math
+%\usepackage{threeparttable} % for tables with footnotes
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{stmaryrd}
+\usepackage[toc,page]{appendix}
+
+\usepackage[ruled,lined,linesnumbered]{algorithm2e}
+
+% hyperref must be last
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=red,
+  citecolor=green,
+  urlcolor=blue
+}
+  
+% We often use mathcal for functions
+\newcommand{\fnc}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\vecfnc}[1]{\ensuremath{\boldsymbol{\mathcal{#1}}}} % vector function
+
+% matrices are often math sans serif type
+\newcommand{\mat}[1]{\ensuremath{\mathsf{#1}}}
+
+% SBP operator matrices
+\newcommand{\M}[0]{\mat{H}}
+\newcommand{\Dx}[0]{\mat{D}_{x}}
+\newcommand{\Dy}[0]{\mat{D}_{y}}
+\newcommand{\Dz}[0]{\mat{D}_{z}}
+\newcommand{\Sx}[0]{\mat{S}_{x}}
+\newcommand{\Sy}[0]{\mat{S}_{y}}
+\newcommand{\Sz}[0]{\mat{S}_{z}}
+\newcommand{\Qx}[0]{\mat{Q}_{x}}
+\newcommand{\Qy}[0]{\mat{Q}_{y}}
+\newcommand{\Qz}[0]{\mat{Q}_{z}}
+\newcommand{\Ex}[0]{\mat{E}_{x}}
+\newcommand{\Ey}[0]{\mat{E}_{y}}
+\newcommand{\Ez}[0]{\mat{E}_{z}}
+
+% optimization commands
+\newcommand{\Lag}[0]{\fnc{L}}
+\newcommand{\optmin}{\ensuremath{\text{minimize}}}
+\newcommand{\wrt}{\ensuremath{\text{with respect to}}}
+\newcommand{\st}[0]{\ensuremath{\text{s.t.}}}
+\newcommand{\W}[0]{\mat{W}} % Hessian
+\newcommand{\A}[0]{\mat{A}} % Jacobian
+\newcommand{\K}[0]{\mat{K}} % KKT matrix
+\newcommand{\Hess}[0]{\mat{H}} % upper Hessenberg
+\newcommand{\I}[0]{\mat{I}} % identity
+\newcommand{\diff}[0]{\mathrm{d}}
+% common math operators
+\DeclareMathOperator{\spn}{span}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\mydiag}{diag}
+\newcommand{\argmin}[0]{\ensuremath{\operatornamewithlimits{argmin}}}
+\newcommand{\sgn}[0]{\operatorname{sgn}}
+\newcommand{\nullsp}[0]{\operatorname{null}}
+
+% environments for definitions, therorems, etc 
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{remark}{Remark}
+\newtheorem{assumption}{Assumption}
+\newtheorem{thrm}{Theorem}
+
+% command latin phrases and other short-forms
+\newcommand{\etal}[0]{{\em et~al.\@}\xspace}
+\newcommand{\eg}[0]{{e.g.\@}\xspace}
+\newcommand{\ie}[0]{{i.e.\@}\xspace}
+\newcommand{\viz}[0]{{viz.\@}\xspace}
+\newcommand{\resp}[0]{{resp.\@}\xspace}
+
+\newcommand{\Jump}[1]{\llbracket #1\rrbracket}
+\newcommand{\Mean}[1]{\{\{#1\}\}}
+% Misc. commands
+\newcommand{\ignore}[1]{} % comment out large sections of code
